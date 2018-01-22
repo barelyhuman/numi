@@ -68,6 +68,14 @@ function fetchProducts() {
     });
 }
 
+function normalizeName(name) {
+  const temp = name.trim().split(" ");
+  const a = temp.map(x => {
+    return x.charAt(0).toUpperCase() + x.slice(1).toLowerCase();
+  });
+  return a.join(" ");
+}
+
 function addToTeamCollection(data) {
   const alumini = data.filter(item => !item.currentMember);
   const currentTeam = data.filter(item => item.currentMember);
@@ -82,9 +90,12 @@ function addToTeamCollection(data) {
     di2.className = "card-info";
     pt.className = "card-title";
     pt2.className = "card-subtitle";
-    im.src = api + item.avatar;
-    pt.textContent = item.name;
+    im.src = item.avatar;
+    pt.textContent = normalizeName(item.name);
     pt2.textContent = item.position;
+    di.onclick = () => {
+      window.open(item.url, "_blank");
+    };
     di2.appendChild(pt);
     di2.appendChild(pt2);
     di.appendChild(im);
@@ -102,9 +113,12 @@ function addToTeamCollection(data) {
     di2.className = "card-info";
     pt.className = "card-title";
     pt2.className = "card-subtitle";
-    im.src = api + item.avatar;
-    pt.textContent = item.name;
+    im.src = item.avatar;
+    pt.textContent = normalizeName(item.name);
     pt2.textContent = item.position;
+    di.onclick = () => {
+      window.open(item.url, "_blank");
+    };
     di2.appendChild(pt);
     di2.appendChild(pt2);
     di.appendChild(im);
