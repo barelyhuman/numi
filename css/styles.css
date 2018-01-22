@@ -241,7 +241,12 @@ section h1 {
   width: 15%;
 }
 
+.card:hover {
+  cursor: pointer;
+}
+
 .card .card-image {
+  border-radius: 3px;
   object-fit: cover;
   width: 100%;
 }
