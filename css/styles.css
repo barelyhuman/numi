@@ -1,0 +1,314 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: "Open Sans", sans-serif;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  margin: 0 auto;
+  height: 65px;
+  width: 55%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#logo img {
+  height: 45px;
+}
+
+.nav {
+  height: 100%;
+  width: 60%;
+  background: white;
+}
+
+.nav ul {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #2d2d2d;
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: 0.2s ease;
+}
+
+.nav a:hover {
+  box-shadow: inset 0 -4px #2d2d2d;
+}
+
+.nav a:hover .nav li {
+  padding-top: 10px;
+}
+
+.nav li {
+  list-style-type: none;
+}
+
+.container-title {
+  font-size: 30px;
+  font-weight: 400;
+  margin: 50px;
+  text-align: center;
+}
+
+.banner {
+  padding: 10px;
+  color: #2d2d2d;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-logo {
+  margin: 16px;
+}
+
+.banner-logo img {
+  height: 250px;
+  width: 250px;
+}
+
+.banner .banner-text {
+  margin: 16px;
+  text-align: left;
+}
+
+.banner .banner-text h3 {
+  font-size: 60px;
+}
+
+.banner .banner-text small {
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.margin-top-60 {
+  margin-top: 60px;
+}
+
+.icon-set {
+  margin: 0 auto;
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.click-icon {
+  width: 20%;
+  text-align: center;
+  transition: 0.2s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.click-icon .icon {
+  margin: 16px;
+  height: 50px;
+  width: 50px;
+  color: #2d2d2d;
+}
+
+.icon img {
+  height: 100%;
+  width: 100%;
+}
+
+.click-icon .text {
+  margin: 16px;
+  font-size: 18px;
+  color: #2d2d2d;
+  font-weight: 600;
+}
+
+.cta {
+  background: #4080ff;
+  color: #fff;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.center-container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 12px 20px 10px 20px;
+  display: inline-block;
+  border-radius: 3px;
+}
+
+.separator {
+  margin: 10px auto;
+  background: #ddd;
+  height: 1px;
+  width: 100%;
+}
+
+section {
+  box-sizing: border-box;
+  padding: 40px 16px;
+  margin: 50px auto;
+  width: 60%;
+}
+
+section:not(:last-child) {
+  border-bottom: 1px solid #ddd;
+}
+
+section h1 {
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.modules {
+  color: #2d2d2d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.mod-item {
+  padding: 10px 0px;
+}
+
+.mod-item p {
+  font-size: 18px;
+}
+
+.code-snip {
+  margin: 10px 0px;
+  padding-top: 16px;
+  background: rgba(0, 0, 0, 0.1);
+  font-family: "Open Sans";
+  font-weight: 400;
+}
+
+.collection {
+  box-sizing: border-box;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  margin: 16px;
+  width: 15%;
+}
+
+.card .card-image {
+  object-fit: cover;
+  width: 100%;
+}
+
+.card .card-info {
+  text-align: center;
+}
+
+.card-info .card-title {
+  color: #2d2d2d;
+  font-weight: 600;
+}
+
+.card-info .card-subtitle {
+  color: #555;
+  font-weight: 300;
+}
+
+#team > div h3 {
+  margin-top: 16px;
+  font-size: 25px;
+  text-align: center;
+}
+
+footer {
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer > div {
+  box-sizing: border-box;
+  padding: 20px;
+  border-top: 1px solid #ddd;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer > div > p {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#social-icons {
+  display: flex;
+  justify-content: center;
+}
+
+#social-icons .icon {
+  margin: 10px;
+  border-radius: 100%;
+  background: transparent;
+  cursor: pointer;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  transition: 0.2s ease;
+}
+
+#social-icons .icon:hover {
+  color: white;
+}
